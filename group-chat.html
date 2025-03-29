@@ -63,8 +63,8 @@
 
     <section class="chat-section">
       <h2>Group Chat</h2>
-      <div class="chat-container">
-        <!-- Chat messages -->
+      <div class="chat-container" id="chatContainer">
+        <!-- Existing chat messages -->
         <div class="message received">
           <div class="message-content">
             <p>Hey team, are we still on for the meeting at 2 PM?</p>
@@ -77,12 +77,11 @@
             <span class="message-time">1:46 PM</span>
           </div>
         </div>
-        <!-- Add more messages as needed -->
       </div>
       <!-- Chat input -->
       <div class="chat-input-container">
-        <input type="text" placeholder="Type a message..." />
-        <button class="btn-send"><i class="bi bi-send"></i></button>
+        <input type="text" id="chatInput" placeholder="Type a message..." />
+        <button class="btn-send" id="sendBtn"><i class="bi bi-send"></i></button>
       </div>
     </section>
   </main>
