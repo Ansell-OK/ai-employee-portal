@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Portal - Profile</title>
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="profile-img-container">
+        <img
+          src="https://picsum.photos/60"
+          alt="Profile"
+          class="profile-img"
+        />
+      </div>
+      <h3 class="user-name">Helen Yahzicki</h3>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="dashboard.html"><i class="bi bi-house"></i> Dashboard</a></li>
+        <li><a href="profile.html" class="active"><i class="bi bi-person"></i> Profile</a></li>
+        <li><a href="settings.html"><i class="bi bi-gear"></i> Settings</a></li>
+        <li><a href="notifications.html"><i class="bi bi-bell"></i> Notifications</a></li>
+        <li><a href="group-chat.html"><i class="bi bi-chat-dots"></i> Group Chat</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <header class="top-nav">
+      <div class="toggle-sidebar">
+        <i class="bi bi-list" id="sidebarToggle"></i>
+      </div>
+      <div class="right-nav-items">
+        <div class="notification-icon" id="notificationIcon">
+          <i class="bi bi-bell"></i>
+          <span class="badge">3</span>
+          <div class="notification-dropdown" id="notificationDropdown">
+            <p><strong>Notifications</strong></p>
+            <ul>
+              <li><a href="notification-details.html">Design review at 2 PM</a></li>
+              <li><a href="notification-details.html">New message from John</a></li>
+              <li><a href="notification-details.html">Reminder: Update profile</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="profile-icon">
+          <img
+            src="https://picsum.photos/40"
+            alt="Profile"
+          />
+        </div>
+      </div>
+    </header>
+
+    <section class="profile-section">
+      <h2>My Profile</h2>
+      <div class="profile-header">
+        <img src="https://picsum.photos/100" alt="User" class="profile-large"/>
+        <div class="profile-info">
+          <h3>Helen Yahzicki</h3>
+          <p>Software Engineer, Seattle WA</p>
+          <p>Full Time | <span>Engineering</span></p>
+        </div>
+      </div>
+      <div class="profile-details">
+        <div class="profile-detail-card">
+          <h4>Personal Information</h4>
+          <p><strong>Birth Date:</strong> 08/05/1990</p>
+          <p><strong>Address:</strong> 1234 Redwood Dr, Seattle, WA</p>
+          <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+        </div>
+        <div class="profile-detail-card">
+          <h4>Occupation Information</h4>
+          <p><strong>Department:</strong> Engineering</p>
+          <p><strong>Position:</strong> Frontend Developer</p>
+          <p><strong>Manager:</strong> John Smith</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

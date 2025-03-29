@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Portal - Dashboard</title>
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+  />
+  <!-- FullCalendar CSS (External Calendar API/Widget) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="profile-img-container">
+        <!-- Use a placeholder image from picsum -->
+        <img
+          src="https://picsum.photos/60"
+          alt="Profile"
+          class="profile-img"
+        />
+      </div>
+      <h3 class="user-name">Helen Yahzicki</h3>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="dashboard.html" class="active"><i class="bi bi-house"></i> Dashboard</a></li>
+        <li><a href="profile.html"><i class="bi bi-person"></i> Profile</a></li>
+        <li><a href="settings.html"><i class="bi bi-gear"></i> Settings</a></li>
+        <li><a href="notifications.html"><i class="bi bi-bell"></i> Notifications</a></li>
+        <li><a href="group-chat.html"><i class="bi bi-chat-dots"></i> Group Chat</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Top Navbar -->
+    <header class="top-nav">
+      <div class="toggle-sidebar">
+        <!-- Profile icon or hamburger for responsiveness -->
+        <i class="bi bi-list" id="sidebarToggle"></i>
+      </div>
+      <div class="right-nav-items">
+        <div class="notification-icon" id="notificationIcon">
+          <i class="bi bi-bell"></i>
+          <span class="badge">3</span>
+          <!-- Notification dropdown/popup -->
+          <div class="notification-dropdown" id="notificationDropdown">
+            <p><strong>Notifications</strong></p>
+            <ul>
+              <li><a href="notification-details.html">Design review at 2 PM</a></li>
+              <li><a href="notification-details.html">New message from John</a></li>
+              <li><a href="notification-details.html">Reminder: Update profile</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="profile-icon">
+          <img
+            src="https://picsum.photos/40"
+            alt="Profile"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- Dashboard Content -->
+    <section class="dashboard-section">
+      <div class="dashboard-header">
+        <h2>Overview</h2>
+        <div class="date-time">July 24, 2025 | 4:00 PM</div>
+      </div>
+
+      <!-- Cards or Basic Info Section -->
+      <div class="info-cards">
+        <div class="info-card">
+          <h3>Basic Information</h3>
+          <p>Birth Date: 08/05/1990</p>
+          <p>Workload: Full Time</p>
+          <p>WkHrs/Day: 8</p>
+          <p>Position: Engineering</p>
+          <p>Location: Seattle, WA</p>
+        </div>
+        <div class="info-card">
+          <h3>Onboarding</h3>
+          <ul>
+            <li>Birth Cert: <span class="status pending">Pending</span></li>
+            <br>
+            <li>Bank Info: <span class="status done">Done</span></li>
+            <br>
+            <li>Signed Offer: <span class="status done">Done</span></li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3>Upcoming Events</h3>
+          <ul>
+            <li>Design Review: 07/25 at 2PM</li>
+            <br>
+            <li>Team Lunch: 07/26 at 12PM</li>
+            <br>
+            <li>Code Freeze: 07/30</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Calendar Section -->
+      <div class="calendar-section">
+        <h3>Calendar</h3>
+        <div id="calendar"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FullCalendar and Script -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
